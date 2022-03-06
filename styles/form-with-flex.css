@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-color: #333;
+    color: aliceblue;
+	line-height: 1;
+    font-family: 'Fredoka', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #888;
+    margin: 3rem 1.8rem;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 8px 8px 16px 2px #0006;
+    max-width: 62.5rem;
+    border: 2px solid #2dc;
+}
+
+.form {
+    min-width: 25rem;
+    flex: 1;
+    text-align: center;
+    padding: 1.8rem;
+}
+
+.form__input {
+    width: 100%;
+    margin: .6rem;
+    padding: .4rem;
+    border: none;
+    border-bottom: 3px solid #2dc;
+    background-color: transparent;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.form__input:focus {
+    background: linear-gradient(to bottom, transparent, #555);
+    color: #fff;
+    outline: none;
+    border-bottom: 3px solid #2d9;
+    border-top-left-radius: 10px;
+}
+
+.form__input::placeholder {
+    color: #000;
+    font-size: 1rem;
+    background-color: #2dc3;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.form__input:focus::placeholder {
+    background-color:#2d93;
+}
+
+.form textarea {
+    min-height: 10rem;
+    resize: none;
+}
+
+.form-img div {
+    padding: .7rem;
+}
+
+.form-img {
+    flex: 1;
+    padding: .8rem;
+    display: flex;
+}
+
+.img-container div {
+    border-radius: 50%;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    background-color: #2dc7;
+    min-width: 18.8rem;
+}
+
+.form-img img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.form input[type="submit"] {
+    padding: .8rem ;
+    width: 103%;
+    background-color: #2d93;
+    transition: background-color .5s ;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #2d97;
+}
